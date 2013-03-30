@@ -1,0 +1,8 @@
+skriva
+======
+
+Skriva is the name of my blog. It's a fork of the awesome Zleek Theme. I had already made the design for tumblr in Sketch. Zleek was similar enough in appearance that I knew I could stitch together some of the code. As I am relatively PHP illiterate, it made the process much easier.
+
+To see what it looks like, check it out at my (http://blog.coletownsend.com)[blog].
+
+This is my first time using git, so be wary.
