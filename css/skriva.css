@@ -1,0 +1,609 @@
+/*- RESET ----------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+  border: 0;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+:focus {
+  outline: none; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+/*- TYPOGRAPHY ----------------------------------- */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Sans Serif", "Open Sans", "freight-sans-pro", "Freight Sans Pro";
+  color: #302c2b;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  background: #fbfaf8; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "brandon-grotesque", "Brandon Grotesque";
+  font-weight: 700;
+  letter-spacing: -1px; }
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 5.4rem; }
+
+h2 {
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 2.8rem; }
+
+p {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  margin-bottom: 3.6rem; }
+
+a, a:visited, a:active {
+  color: #D25437;
+  transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out; }
+
+a:hover {
+  color: #333332;
+  transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+article.post ul, article.post ol {
+  font-size: 2.2rem;
+  margin: 0 0 3.6rem 4rem; }
+  article.post ul li, article.post ol li {
+    line-height: 1.5em; }
+
+article.post ul {
+  list-style: disc; }
+
+article.post ol {
+  list-style: decimal; }
+
+blockquote {
+  color: #302c2b;
+  font-style: italic;
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  padding: 0 2rem 0 3.6rem;
+  margin-bottom: 3.6rem;
+  border-left: 4px solid #d2d2d2; }
+
+/*- BUTTONS ----------------------------------*/
+.btn-jacket {
+  display: block;
+  margin: 0 auto;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+
+.button {
+  line-height: 4rem;
+  height: 4rem;
+  width: auto;
+  padding: 0px 10px;
+  text-align: center;
+  border: 4px solid #d25437;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 4.2rem;
+  font-weight: bold;
+  font-family: "brandon-grotesque", "Brandon Grotesque";
+  transition: border-color 0.25s ease-in-out;
+  -moz-transition: border-color 0.25s ease-in-out;
+  -webkit-transition: border-color 0.25s ease-in-out; }
+  .button:hover {
+    color: #302c2b;
+    border-color: #302c2b;
+    transition: border-color 0.25s ease-in-out;
+    -moz-transition: border-color 0.25s ease-in-out;
+    -webkit-transition: border-color 0.25s ease-in-out; }
+
+/*- LAYOUT ----------------------------------- */
+#bump {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -32rem; }
+
+.wrap {
+  width: 960px;
+  margin: 0 auto; }
+  .wrap .post {
+    padding: 0 160px; }
+  .wrap:before, .wrap:after {
+    content: "";
+    display: table; }
+  .wrap:after {
+    clear: both; }
+  .wrap {
+    zoom: 1; }
+
+.resize {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 8rem;
+  width: 8rem;
+  background: url("../img/resize.png"); }
+
+/*- HEADER ----------------------------------- */
+header.site-header {
+  padding: 2rem 0;
+  border-bottom: 1px solid #eeeeee; }
+
+header.site-header a.menu {
+  display: none; }
+
+header.site-header hgroup h1, header.site-header nav ul {
+  font-family: "brandon-grotesque", "Brandon Grotesque"; }
+
+header.site-header hgroup {
+  float: left; }
+  header.site-header hgroup h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  header.site-header hgroup a {
+    color: #302c2b; }
+    header.site-header hgroup a:hover {
+      color: #d25437; }
+
+header.site-header nav {
+  float: right;
+  display: block; }
+
+header.site-header nav ul li {
+  font-size: 1.6rem;
+  display: inline;
+  font-weight: 300;
+  margin-left: 2rem; }
+  header.site-header nav ul li a {
+    color: #302c2b; }
+    header.site-header nav ul li a:hover {
+      color: #665d5b; }
+
+/*- ARTICLE ----------------------------------- */
+section .article {
+  position: relative;
+  margin-bottom: 5rem; }
+section .archive {
+  margin-top: 5rem; }
+  section .archive .post-list {
+    width: 100%; }
+    section .archive .post-list li {
+      margin-bottom: 3.6rem;
+      font-size: 2.8rem; }
+    section .archive .post-list li:first-child h2 {
+      font-style: 5.5rem;
+      line-height: 8.28rem; }
+    section .archive .post-list li:first-child time {
+      position: relative;
+      top: -6px; }
+
+section.archive ol.post-list li {
+  margin-bottom: 3.6rem;
+  font-size: 2.8rem; }
+
+section.archive ol.post-list li span, section.archive ol.post-list li span time {
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  vertical-align: middle; }
+
+section.article img.loading {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  margin-left: -12px;
+  z-index: 10; }
+
+section.article div.featured-image {
+  vertical-align: middle;
+  height: 70vh;
+  width: 100%;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  z-index: -1; }
+
+section.article article.post header.post-header {
+  margin: 7.2rem 0; }
+
+section.article article.post header.post-header hgroup {
+  color: #302c2b;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+section.article article.post header.post-header hgroup p.date {
+  font-family: "brandon-grotesque", "Brandon Grotesque";
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #d2d2d2;
+  text-transform: uppercase;
+  margin-top: 2.4rem; }
+
+section.article article.post header.post-header hgroup h1 {
+  margin-bottom: 1.8rem;
+  letter-spacing: -1px; }
+
+section.article article.post header.post-header hgroup p.lead {
+  font-size: 2.8rem;
+  font-style: italic;
+  line-height: 3.6rem;
+  margin-bottom: 0; }
+
+section.article article.post figure {
+  margin: 3.6rem 0; }
+
+section.article article.post figure figcaption {
+  font-size: 1.4rem;
+  font-style: italic; }
+
+section.article article.post figure img {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
+section.article article.post p.meta {
+  color: #d2d2d2;
+  font-style: italic;
+  font-size: 1.6rem; }
+
+section.article article.post .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 3.6rem;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 3.6rem; }
+
+section.article article.post .video-container iframe,
+section.article article.post .video-container object,
+section.article article.post .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/*- FOOTER ----------------------------------- */
+.push {
+  height: 32rem !important; }
+
+footer {
+  background-color: #3C424E;
+  height: 32rem;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 5rem; }
+
+/* Social */
+.social {
+  float: right;
+  padding-top: 9.6rem;
+  font-size: 2rem; }
+  .social ul {
+    list-style: none;
+    list-style-type: none li;
+      list-style-type-margin-bottom: 3.6rem; }
+    .social ul .foot-link {
+      margin-left: 1rem; }
+  .social ul li:last-child {
+    margin-bottom: 0; }
+
+@media only screen and (max-width: 760px) {
+  .social {
+    width: 80px; }
+
+  .social ul li {
+    margin-bottom: 30px; }
+
+  .social .icons {
+    font-size: 30px;
+    float: right;
+    text-align: right; }
+
+  .foot-link {
+    visibility: hidden; } }
+@media only screen and (max-width: 620px) {
+  .social .icons {
+    float: right;
+    text-align: right; }
+
+  .previous-posts {
+    width: 220px; }
+
+  .recent-list {
+    width: 220px; }
+
+  .date {
+    display: none; }
+
+  .foot-link {
+    visibility: hidden; } }
+@media only screen and (max-width: 480px) {
+  .social {
+    display: none; }
+
+  .previous-posts {
+    width: auto;
+    max-width: 90vw;
+    width: 320px; }
+
+  .previous-posts ol li {
+    width: 330px; }
+
+  .recent-list {
+    width: auto;
+    max-width: 90vw;
+    width: 320px; } }
+.icons {
+  font-family: "Icons";
+  font-size: 1.4rem;
+  line-height: 2rem; }
+
+#mail {
+  color: #fbfaf8; }
+  #mail:hover {
+    color: rgba(251, 250, 248, 0.7); }
+
+#drib {
+  color: #EC9E92; }
+  #drib:hover {
+    color: rgba(236, 158, 146, 0.7); }
+
+#twit {
+  color: #4099FF; }
+  #twit:hover {
+    color: rgba(64, 153, 255, 0.7); }
+
+/* Recent Posts */
+.previous-posts {
+  width: 34rem;
+  float: left;
+  height: 25rem;
+  overflow: hidden; }
+
+footer .recent-list {
+  padding-top: 3.6rem;
+  font-family: "Brandon Grotesque", sans-serif;
+  line-height: 5.6rem;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #fbfaf8;
+  text-transform: capitalize;
+  border-bottom: 4px solid #a5da95;
+  margin-bottom: 1.8rem; }
+
+footer ol.previous-posts li {
+  margin-bottom: 2rem; }
+  footer ol.previous-posts li:before, footer ol.previous-posts li:after {
+    content: "";
+    display: table; }
+  footer ol.previous-posts li:after {
+    clear: both; }
+  footer ol.previous-posts li {
+    zoom: 1; }
+
+footer ol.previous-posts li .recent-title {
+  float: left; }
+
+footer ol.previous-posts li a {
+  color: #fbfaf8; }
+
+footer ol.previous-posts li a:hover {
+  color: #d25437; }
+
+footer ol.previous-posts li span.date {
+  font-family: "Sans Serif", "Open Sans", "freight-sans-pro", "Freight Sans Pro";
+  color: rgba(210, 210, 210, 0.7);
+  float: right;
+  text-align: right; }
+
+/*- MEDIA QUERIES ----------------------------------- */
+@media only screen and (max-width: 960px) {
+  .wrap {
+    width: 100%; }
+
+  .wrap.post {
+    padding: 0 7%; }
+
+  header.site-header {
+    padding: 20px 7%; } }
+@media only screen and (max-width: 680px) {
+  section.article img.loading {
+    top: 10px !important;
+    left: inherit;
+    right: 6%; }
+
+  section.article article.post header.post-header {
+    margin: 3.6rem 0; }
+
+  article.post header.post-header hgroup h1 {
+    font-size: 2.8rem !important; }
+
+  article.post header.post-header hgroup p.date {
+    font-size: 1.2rem !important; }
+
+  article.post p, article.post ul, article.post ol {
+    font-size: 2rem !important;
+    line-height: 3rem !important;
+    margin-bottom: 3rem; }
+
+  article.post ul, article.post ol {
+    margin-left: 3rem; }
+
+  article.post li {
+    line-height: 3rem !important; }
+
+  article.post p.lead, article.post blockquote {
+    font-size: 4.2rem !important; }
+
+  article.post blockquote {
+    padding-left: 2rem;
+    line-height: 2rem; }
+
+  header.site-header {
+    min-height: 5.9rem; }
+
+  header.site-header hgroup {
+    float: none;
+    position: absolute;
+    left: 7%; }
+
+  header.site-header a.menu {
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 7%;
+    float: right; }
+
+  header.site-header a.menu img {
+    height: 16px;
+    width: 16px; }
+
+  header.site-header nav {
+    display: none;
+    float: none;
+    width: 100%; }
+    header.site-header nav:before, header.site-header nav:after {
+      content: "";
+      display: table; }
+    header.site-header nav:after {
+      clear: both; }
+    header.site-header nav {
+      zoom: 1; }
+
+  header.site-header nav ul {
+    padding: 45px 0 10px 0; }
+
+  header.site-header nav ul li {
+    display: block;
+    font-size: 2.6rem;
+    margin-left: 0;
+    border-top: 1px solid #d2d2d2; }
+
+  header.site-header nav ul li a {
+    color: #302c2b;
+    display: block;
+    width: 100%;
+    padding: 15px 0; }
+
+  header.site-header nav ul li a:active {
+    background-color: #d25437;
+    color: #fbfaf8; } }
+@media only screen and (max-width: 500px) {
+  section.article img.loading {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    margin-left: -12px;
+    z-index: 10; }
+
+  section.article div.featured-image {
+    vertical-align: middle;
+    height: 50vh;
+    width: 100%;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    z-index: -1; }
+
+  footer p.recent-list {
+    font-family: "brandon-grotesque", "Brandon Grotesque";
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fbfaf8;
+    text-transform: capitalize;
+    border-bottom: 4px solid #a5da95;
+    margin-bottom: 15px; }
+
+  footer ol.previous-posts li span.date {
+    visibility: hidden; } }
+/* Icon Font */
+@font-face {
+  font-family: 'Icons';
+  src: url("http://static.tumblr.com/d0zy9go/tLxmiwev5/icons.eot");
+  src: url("http://static.tumblr.com/d0zy9go/tLxmiwev5/icons.eot") format("embedded-opentype"), url("http://static.tumblr.com/d0zy9go/0EPmiwewl/icons.woff") format("woff"), url("http://static.tumblr.com/d0zy9go/muzmiwew1/icons.ttf") format("truetype"), url("http://static.tumblr.com/d0zy9go/Wccmiwex1/icons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }

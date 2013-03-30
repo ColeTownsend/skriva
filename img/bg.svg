@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000px" height="600px" viewBox="0 0 1000 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" fill="#D8D8D8" fill-rule="evenodd">
+        <path d="M0,0 L0,600 L1000,600 L1000,0 L0,0 Z M0,0" id="Rectangle 1" fill="#3C424E"></path>
+        <path d="M-255,-104 L-255,720 L-195,720 L-195,-104 L-255,-104 Z M-255,-104" id="Rectangle 2" stroke="rgb(132,132,132)" stroke-width="1" fill="#EC9E92" transform="translate(-225.000000, 308.000000) rotate(-330.000000) translate(225.000000, -308.000000)"></path>
+        <path d="M-15,-104 L-15,720 L45,720 L45,-104 L-15,-104 Z M-15,-104" id="Rectangle 2 copy" stroke="rgb(132,132,132)" stroke-width="1" fill="#EC9E92" transform="translate(15.000000, 308.000000) rotate(-330.000000) translate(-15.000000, -308.000000)"></path>
+        <path d="M225,-104 L225,720 L285,720 L285,-104 L225,-104 Z M225,-104" id="Rectangle 2 copy" stroke="rgb(132,132,132)" stroke-width="1" fill="#EC9E92" transform="translate(255.000000, 308.000000) rotate(-330.000000) translate(-255.000000, -308.000000)"></path>
+        <path d="M465,-104 L465,720 L525,720 L525,-104 L465,-104 Z M465,-104" id="Rectangle 2 copy 2" stroke="rgb(132,132,132)" stroke-width="1" fill="#EC9E92" transform="translate(495.000000, 308.000000) rotate(-330.000000) translate(-495.000000, -308.000000)"></path>
+        <path d="M705,-104 L705,720 L765,720 L765,-104 L705,-104 Z M705,-104" id="Rectangle 2 copy 2" stroke="rgb(132,132,132)" stroke-width="1" fill="#EC9E92" transform="translate(735.000000, 308.000000) rotate(-330.000000) translate(-735.000000, -308.000000)"></path>
+        <path d="M945,-104 L945,720 L1005,720 L1005,-104 L945,-104 Z M945,-104" id="Rectangle 2 copy 3" stroke="rgb(132,132,132)" stroke-width="1" fill="#EC9E92" transform="translate(975.000000, 308.000000) rotate(-330.000000) translate(-975.000000, -308.000000)"></path>
+        <path d="M1185,-104 L1185,720 L1245,720 L1245,-104 L1185,-104 Z M1185,-104" id="Rectangle 2 copy 4" stroke="rgb(132,132,132)" stroke-width="1" fill="#EC9E92" transform="translate(1215.000000, 308.000000) rotate(-330.000000) translate(-1215.000000, -308.000000)"></path>
+    </g>
+</svg>
