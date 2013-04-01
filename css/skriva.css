@@ -64,7 +64,7 @@ body {
   background: #fbfaf8; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "brandon-grotesque", "Brandon Grotesque";
+  font-family: "brandon-grotesque", "grot";
   font-weight: 700;
   letter-spacing: -1px; }
 
@@ -77,6 +77,12 @@ h2 {
 
 h3 {
   font-size: 2.8rem; }
+
+h4 {
+  font-style: italic;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 36px; }
 
 p {
   font-size: 2.2rem;
@@ -150,7 +156,7 @@ blockquote {
   width: 100%;
   font-size: 4.2rem;
   font-weight: bold;
-  font-family: "brandon-grotesque", "Brandon Grotesque";
+  font-family: "brandon-grotesque", "grot";
   transition: border-color 0.25s ease-in-out;
   -moz-transition: border-color 0.25s ease-in-out;
   -webkit-transition: border-color 0.25s ease-in-out; }
@@ -189,6 +195,13 @@ blockquote {
   width: 8rem;
   background: url("../img/resize.png"); }
 
+.post img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
+
 /*- HEADER ----------------------------------- */
 header.site-header {
   padding: 2rem 0;
@@ -198,7 +211,7 @@ header.site-header a.menu {
   display: none; }
 
 header.site-header hgroup h1, header.site-header nav ul {
-  font-family: "brandon-grotesque", "Brandon Grotesque"; }
+  font-family: "brandon-grotesque", "grot"; }
 
 header.site-header hgroup {
   float: left; }
@@ -243,16 +256,16 @@ section .archive {
       line-height: 8.28rem; }
     section .archive .post-list li:first-child time {
       position: relative;
-      top: -6px; }
-
-section.archive ol.post-list li {
-  margin-bottom: 3.6rem;
-  font-size: 2.8rem; }
-
-section.archive ol.post-list li span, section.archive ol.post-list li span time {
-  font-size: 1.6rem;
-  line-height: 3.6rem;
-  vertical-align: middle; }
+      top: -6px;
+      font-size: 1.6rem;
+      line-height: 3.6rem;
+      vertical-align: middle; }
+section .post img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
 
 section.article img.loading {
   display: block;
@@ -278,30 +291,26 @@ section.article div.featured-image {
 
 section.article article.post header.post-header {
   margin: 7.2rem 0; }
-
-section.article article.post header.post-header hgroup {
-  color: #302c2b;
-  position: relative;
-  text-align: center;
-  width: 100%; }
-
-section.article article.post header.post-header hgroup p.date {
-  font-family: "brandon-grotesque", "Brandon Grotesque";
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #d2d2d2;
-  text-transform: uppercase;
-  margin-top: 2.4rem; }
-
-section.article article.post header.post-header hgroup h1 {
-  margin-bottom: 1.8rem;
-  letter-spacing: -1px; }
-
-section.article article.post header.post-header hgroup p.lead {
-  font-size: 2.8rem;
-  font-style: italic;
-  line-height: 3.6rem;
-  margin-bottom: 0; }
+  section.article article.post header.post-header hgroup {
+    color: #302c2b;
+    position: relative;
+    text-align: center;
+    width: 100%; }
+    section.article article.post header.post-header hgroup .date {
+      font-family: "brandon-grotesque", "grot";
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #d2d2d2;
+      text-transform: uppercase;
+      margin-top: 2.4rem; }
+    section.article article.post header.post-header hgroup h1 {
+      margin-bottom: 1.8rem;
+      letter-spacing: -1px; }
+    section.article article.post header.post-header hgroup .lead {
+      font-size: 2.4rem;
+      font-style: italic;
+      line-height: 3.6rem;
+      margin-bottom: 0; }
 
 section.article article.post figure {
   margin: 3.6rem 0; }
@@ -589,7 +598,7 @@ footer ol.previous-posts li span.date {
     z-index: -1; }
 
   footer p.recent-list {
-    font-family: "brandon-grotesque", "Brandon Grotesque";
+    font-family: "brandon-grotesque", "grot";
     line-height: 3rem;
     font-size: 2rem;
     font-weight: bold;
