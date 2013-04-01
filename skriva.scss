@@ -5,6 +5,7 @@ $grot: "brandon-grotesque", "grot" ;
 $lh: 3.6rem;
 $font-size: 2.2rem;
 $featureH: 40vh;
+$wrapW: 96rem;
 $red: #D25437;
 $green: #A5DA95;
 $black: #302c2b;
@@ -12,12 +13,10 @@ $lighter: #d2d2d2;
 $bg: #FBFAF8;
 $navy: #3C424E;
 
-
 $borderR: 4px;
 $footerH: 32rem;
 
 $articleW: 640px;
-$wrapW: 960px;
 
 $ease: all .2s ease;
 
@@ -103,6 +102,13 @@ h2 {
 
 h3 {
     font-size: 2.8rem;
+}
+
+h4 {
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 36px;
 }
 
 p {
@@ -226,6 +232,14 @@ blockquote {
   background: url('../img/resize.png');
 }
 
+.post img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /*- HEADER ----------------------------------- */
 header.site-header {
   padding: 2rem 0;
@@ -337,30 +351,34 @@ section.article div.featured-image {
 }
 section.article article.post header.post-header {
   margin: 7.2rem 0;
+    hgroup {
+        color: $black;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        .date {
+            font-family: $grot;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $lighter;
+            text-transform: uppercase;
+            margin-top: $lh * 2/3;
+        }
+        h1 {
+            margin-bottom: $lh / 2;
+            letter-spacing: -1px; 
+        }
+        .lead {
+            font-size: 2.4rem;
+            font-style: italic;
+            line-height: $lh;
+            margin-bottom: 0;
+        }
+    }
 }
-section.article article.post header.post-header hgroup {
-  color: $black;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-section.article article.post header.post-header hgroup p.date {
-  font-family: $grot;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: $lighter;
-  text-transform: uppercase;
-  margin-top: $lh * 2/3;
-}
-section.article article.post header.post-header hgroup h1 {
-  margin-bottom: $lh / 2;
-  letter-spacing: -1px;
-}
+
 section.article article.post header.post-header hgroup p.lead {
-  font-size: 2.8rem;
-  font-style: italic;
-  line-height: $lh;
-  margin-bottom: 0;
+  
 }
 section.article article.post figure {
   margin: $lh 0;

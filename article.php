@@ -3,7 +3,7 @@
     <section class="article">
       <img src="<?php echo theme_url('/img/loading.gif'); ?>" class="loading" alt="Loading...">
       <div class="overlay"></div>
-      <div class="featured-image" style="background-image: url(<?php echo article_custom_field('featured-image', 'http://f.cl.ly/items/412Y3o2k1h2t3v3w0X0M/feature-img.svg'); ?>);"></div>
+      <div class="featured-image" style="background-image: url(<?php echo article_custom_field('featured-image', 'http://coletownsend.com/blog/themes/skriva/img/feature.svg'); ?>);"></div>
       <article class="wrap post">
         <header class="post-header">
           <hgroup>

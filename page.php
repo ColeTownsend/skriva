@@ -8,14 +8,14 @@
         <section class="article">
           <img src="<?php echo theme_url('/img/loading.gif'); ?>" class="loading" alt="Loading...">
           <div class="overlay"></div>
-          <div class="featured-image" style="background-image: url(<?php echo article_custom_field('featured-image', 'http://f.cl.ly/items/412Y3o2k1h2t3v3w0X0M/feature-img.svg'); ?>);"></div>
+          <div class="featured-image" style="background-image: url(<?php echo article_custom_field('featured-image', 'http://coletownsend.com/blog/themes/skriva/img/feature.svg'); ?>);"></div>
           <article class="wrap post">
-             <header class="post-header">
-                 <hgroup>
-                    <h1><?php echo article_title(); ?></h1>
-                    <p class="date"><time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo date('F jS, Y', article_time()); ?></time></p>
-                    <p class="lead"><?php echo article_description(); ?></p>
-                  </hgroup>
+            <header class="post-header">
+              <hgroup>
+                <h1><?php echo article_title(); ?></h1>
+            <p class="date"><time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo date('F jS, Y', article_time()); ?></time></p>
+                <p class="lead"><?php echo article_description(); ?></p>
+              </hgroup>
             </header>
             <?php echo article_html(); ?>
             
@@ -34,9 +34,18 @@
     
     <?php else: ?>
     
-        <section class="article archive">
+        <section class="article">
+          <img src="<?php echo theme_url('/img/loading.gif'); ?>" class="loading" alt="Loading...">
+          <div class="overlay"></div>
+          <div class="featured-image" style="background-image: url(<?php echo article_custom_field('featured-image', 'http://f.cl.ly/items/412Y3o2k1h2t3v3w0X0M/feature-img.svg'); ?>);"></div>
           <article class="wrap post">
-            <h1><?php echo page_title(); ?></h1>
+             <header class="post-header">
+              <hgroup>
+                <h1><?php echo page_title(); ?></h1>
+                <p class="date"><time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo date('F jS, Y', article_time()); ?></time></p>
+                <p class="lead"><?php echo article_description(); ?></p>
+              </hgroup>
+            </header>
             <?php echo page_content(); ?>
           </article>
         </section>

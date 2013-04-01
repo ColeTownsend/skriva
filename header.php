@@ -8,12 +8,13 @@
 
     <link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
     <link rel="stylesheet" href="http://coletownsend.com/web/content/blog-font/sans/sans.css" media="all" />
+    <link rel="stylesheet" href="http://coletownsend.com/web/content/blog-font/grot/grots.css" media="all" />
     
     <script type="text/javascript" src="//use.typekit.net/zjn1xmy.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
-    <link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
+    <link rel="shortcut icon" href="http://coletownsend.com/favicon.ico">
 
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
