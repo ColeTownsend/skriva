@@ -349,20 +349,21 @@ section.article div.featured-image {
   top: 0;
   z-index: -1;
 }
+
 section.article article.post header.post-header {
-  margin: 7.2rem 0;
-    hgroup {
-        color: $black;
-        position: relative;
-        text-align: center;
-        width: 100%;
-        .date {
-            font-family: $grot;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: $lighter;
-            text-transform: uppercase;
-            margin-top: $lh * 2/3;
+  margin: 7.2rem 0 3.6rem 0;
+  hgroup {
+      color: $black;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      .date {
+        font-family: $grot;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $lighter;
+        text-transform: uppercase;
+        margin-top: $lh * 2/3;
         }
         h1 {
             margin-bottom: $lh / 2;
@@ -377,21 +378,19 @@ section.article article.post header.post-header {
     }
 }
 
-section.article article.post header.post-header hgroup p.lead {
-  
-}
 section.article article.post figure {
   margin: $lh 0;
+    figcaption {
+        font-size: 1.4rem;
+        font-style: italic;  
+    }
+    img {
+       max-width: 100%;
+       width: auto;
+       height: auto; 
+    }
 }
-section.article article.post figure figcaption {
-  font-size: 1.4rem;
-  font-style: italic;
-}
-section.article article.post figure img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
+
 section.article article.post p.meta {
   color: $lighter;
   font-style: italic;
@@ -552,6 +551,26 @@ footer {
     float: left;
     height: 25rem;
     overflow: hidden;
+    li {
+        margin-bottom: 20px;
+        @include clearfix;
+        a {
+            color: $bg;
+            &:hover {
+                color: $red;
+                }
+            }
+        span.date {
+            font-family: $sans, $sans-alt;
+            color: transparentize($lighter, .3);
+            float: right;
+            text-align: right;
+        }
+    }
+    .recent-title {
+        float: left;
+    }
+    
 }
 
 footer .recent-list {
@@ -566,20 +585,7 @@ footer .recent-list {
   margin-bottom: $lh / 2;
 }
 
-footer ol.previous-posts li {
-  margin-bottom: 2rem;
-  @include clearfix;
-}
 
-footer ol.previous-posts li .recent-title {
-  float: left;
-}
-footer ol.previous-posts li a {
-  color: $bg;
-}
-footer ol.previous-posts li a:hover {
-  color: $red;
-}
 footer ol.previous-posts li span.date {
   font-family: $sans, $sans-alt;
   color: transparentize($lighter, .3);

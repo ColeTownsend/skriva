@@ -290,7 +290,7 @@ section.article div.featured-image {
   z-index: -1; }
 
 section.article article.post header.post-header {
-  margin: 7.2rem 0; }
+  margin: 7.2rem 0 3.6rem 0; }
   section.article article.post header.post-header hgroup {
     color: #302c2b;
     position: relative;
@@ -314,15 +314,13 @@ section.article article.post header.post-header {
 
 section.article article.post figure {
   margin: 3.6rem 0; }
-
-section.article article.post figure figcaption {
-  font-size: 1.4rem;
-  font-style: italic; }
-
-section.article article.post figure img {
-  max-width: 100%;
-  width: 100%;
-  height: auto; }
+  section.article article.post figure figcaption {
+    font-size: 1.4rem;
+    font-style: italic; }
+  section.article article.post figure img {
+    max-width: 100%;
+    width: auto;
+    height: auto; }
 
 section.article article.post p.meta {
   color: #d2d2d2;
@@ -444,6 +442,26 @@ footer {
   float: left;
   height: 25rem;
   overflow: hidden; }
+  .previous-posts li {
+    margin-bottom: 20px; }
+    .previous-posts li:before, .previous-posts li:after {
+      content: "";
+      display: table; }
+    .previous-posts li:after {
+      clear: both; }
+    .previous-posts li {
+      zoom: 1; }
+    .previous-posts li a {
+      color: #fbfaf8; }
+      .previous-posts li a:hover {
+        color: #d25437; }
+    .previous-posts li span.date {
+      font-family: "Sans Serif", "Open Sans", "freight-sans-pro", "Freight Sans Pro";
+      color: rgba(210, 210, 210, 0.7);
+      float: right;
+      text-align: right; }
+  .previous-posts .recent-title {
+    float: left; }
 
 footer .recent-list {
   padding-top: 3.6rem;
@@ -455,25 +473,6 @@ footer .recent-list {
   text-transform: capitalize;
   border-bottom: 4px solid #a5da95;
   margin-bottom: 1.8rem; }
-
-footer ol.previous-posts li {
-  margin-bottom: 2rem; }
-  footer ol.previous-posts li:before, footer ol.previous-posts li:after {
-    content: "";
-    display: table; }
-  footer ol.previous-posts li:after {
-    clear: both; }
-  footer ol.previous-posts li {
-    zoom: 1; }
-
-footer ol.previous-posts li .recent-title {
-  float: left; }
-
-footer ol.previous-posts li a {
-  color: #fbfaf8; }
-
-footer ol.previous-posts li a:hover {
-  color: #d25437; }
 
 footer ol.previous-posts li span.date {
   font-family: "Sans Serif", "Open Sans", "freight-sans-pro", "Freight Sans Pro";
