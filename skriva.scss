@@ -223,15 +223,6 @@ blockquote {
   @include clearfix;
 }
 
-.resize {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 8rem;
-  width: 8rem;
-  background: url('../img/resize.png');
-}
-
 .post img {
     width: auto;
     max-width: 100%;
@@ -272,17 +263,18 @@ header.site-header hgroup {
 header.site-header nav {
   float: right;
   display: block;
-}
-header.site-header nav ul li {
-  font-size: 1.6rem;
-  display: inline;
-  font-weight: 300;
-  margin-left: 2rem;
-  a {
-    color: $black;
-    &:hover {
-        color: lighten($black, 20%)
-    }
+  @include clearfix;
+  ul li {
+    font-size: 1.6rem;
+    display: inline;
+    font-weight: 300;
+    margin-left: 2rem; 
+    a {
+        color: $black;
+        &:hover {
+            color: lighten($black, 20%)
+        }
+    } 
   }
 }
 
@@ -445,18 +437,20 @@ footer {
     .foot-link {
         margin-left: 1rem; }
 }
-
     ul li:last-child {
         margin-bottom: 0;
     }
 }
+
 @media only screen and (max-width : 760px) {
     .social {
-        width: 80px
+        width: 80px;
+        padding-top: 72px;
     }
     .social ul li {
         margin-bottom: 30px;
     }
+    
     .social .icons {
         font-size: 30px;
         float: right;
@@ -465,7 +459,11 @@ footer {
     .foot-link {
         visibility: hidden;
     }
+    .social ul li:first-child {
+        margin-bottom: 18px;
+    }
 }
+
 
 @media only screen and (max-width : 620px) {
     .social .icons {
@@ -607,6 +605,8 @@ footer ol.previous-posts li span.date {
   }
 }
 
+
+
 @media only screen and (max-width : 680px) {
   section.article img.loading {
     top: 10px !important;
@@ -645,6 +645,7 @@ footer ol.previous-posts li span.date {
   header.site-header {
     min-height: 5.9rem;
   }
+  
   header.site-header hgroup {
     float: none;
     position: absolute;
