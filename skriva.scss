@@ -579,7 +579,8 @@ footer {
         padding-top: $lh*2;
     }
     li {
-        margin-bottom: 20px;
+        margin-top: 10px;
+        width: auto;
         @include clearfix;
         a {
             color: $bg;
@@ -592,10 +593,14 @@ footer {
             color: transparentize($lighter, .3);
             float: right;
             text-align: right;
+            float: right;
+            position: relative;
+            top: 2px;
         }
     }
     .recent-title {
         float: left;
+        width: 220px;
     }
     
 }
@@ -883,6 +888,63 @@ footer ol.previous-posts li span.date {
 }
 
 }
+
+/* Animations */
+@-webkit-keyframes scale-in
+{
+    0% { 
+        opacity             : 0;
+        -webkit-transform   : scale(.05);
+    }
+    100% {
+        opacity             : 1;
+        -webkit-transform   : scale(1);
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+
+@-webkit-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-90px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+
+.featured-image-small {
+  -webkit-animation-name: scale-in;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-timing-function: cubic-bezier(0.56, -0.01, 0, 1);
+  -webkit-animation-delay: .6s;
+  -webkit-animation-fill-mode: both;
+
+}
+
+.deets {
+     -webkit-animation-name: fadeInLeft;
+    -webkit-animation-duration: 1.2s;
+     -webkit-animation-timing-function: cubic-bezier(0.7, -0.005, .1, 1);
+    -webkit-animation-delay: 1.2s; 
+    -webkit-animation-fill-mode: both;
+}
+
+
 
 /* Icon Font */    
     @font-face {

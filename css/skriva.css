@@ -479,7 +479,8 @@ footer {
   .previous-posts p {
     padding-top: 6.67rem; }
   .previous-posts li {
-    margin-bottom: 20px; }
+    margin-top: 10px;
+    width: auto; }
     .previous-posts li:before, .previous-posts li:after {
       content: "";
       display: table; }
@@ -495,9 +496,13 @@ footer {
       font-family: "Sans Serif", "Open Sans", "freight-sans-pro", "Freight Sans Pro";
       color: rgba(210, 210, 210, 0.7);
       float: right;
-      text-align: right; }
+      text-align: right;
+      float: right;
+      position: relative;
+      top: 2px; }
   .previous-posts .recent-title {
-    float: left; }
+    float: left;
+    width: 220px; }
 
 footer .recent-list {
   padding-top: 3.335rem;
@@ -723,6 +728,48 @@ footer .recent-list {
 
   footer ol.previous-posts li span.date {
     visibility: hidden; } }
+/* Animations */
+@-webkit-keyframes scale-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.05); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1); } }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-90px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+.featured-image-small {
+  -webkit-animation-name: scale-in;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-timing-function: cubic-bezier(0.56, -0.01, 0, 1);
+  -webkit-animation-delay: .6s;
+  -webkit-animation-fill-mode: both; }
+
+.deets {
+  -webkit-animation-name: fadeInLeft;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-timing-function: cubic-bezier(0.7, -0.005, 0.1, 1);
+  -webkit-animation-delay: 1.2s;
+  -webkit-animation-fill-mode: both; }
+
 /* Icon Font */
 @font-face {
   font-family: 'Icons';
