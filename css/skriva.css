@@ -66,23 +66,22 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "brandon-grotesque", "grot";
   font-weight: 700;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  line-height: 3.6rem; }
 
 h1 {
-  font-size: 4.8rem;
-  line-height: 5.4rem; }
+  font-size: 4.2rem; }
 
 h2 {
   font-size: 3.6rem; }
 
 h3 {
-  font-size: 2.8rem; }
+  font-size: 3rem; }
 
 h4 {
   font-style: italic;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 36px; }
+  font-size: 1em;
+  font-weight: bold; }
 
 p {
   font-size: 2.4rem;
@@ -91,7 +90,7 @@ p {
   margin-bottom: 3.6rem; }
 
 a, a:visited, a:active {
-  color: #d25437;
+  color: #ec6f66;
   transition: color 0.25s ease-in-out;
   -moz-transition: color 0.25s ease-in-out;
   -webkit-transition: color 0.25s ease-in-out; }
@@ -124,7 +123,7 @@ article.post ul {
   list-style: disc; }
 
 article.post ol {
-  list-style: decimal; }
+  list-style: none; }
 
 blockquote {
   color: #504a46;
@@ -151,7 +150,7 @@ blockquote {
   width: auto;
   padding: 4px 12px;
   text-align: center;
-  border: 4px solid #d25437;
+  border: 4px solid #ec6f66;
   border-radius: 4px;
   width: 100%;
   font-size: 4.4rem;
@@ -178,7 +177,7 @@ blockquote {
   width: 960px;
   margin: 0 auto; }
   .wrap .post {
-    padding: 0 140px; }
+    padding: 0 143px; }
   .wrap:before, .wrap:after {
     content: "";
     display: table; }
@@ -222,7 +221,7 @@ header.site-header hgroup {
   header.site-header hgroup a {
     color: #504a46; }
     header.site-header hgroup a:hover {
-      color: #d25437; }
+      color: #ec6f66; }
 
 header.site-header nav {
   float: right;
@@ -282,12 +281,14 @@ section .archive {
   height: auto;
   display: block;
   margin: 0 auto; }
+.post h1, .post h2, .post h3, .post h4, .post h5 {
+  margin-bottom: 1.8rem; }
 
 .deets {
   position: relative;
   top: 4.5rem; }
   .deets .date {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     position: relative;
     left: 6px;
@@ -402,14 +403,14 @@ footer {
 
 @media only screen and (max-width: 760px) {
   .social {
-    width: 80px;
-    padding-top: 72px; }
+    width: 8rem;
+    padding-top: 7.2rem; }
 
   .social ul li {
-    margin-bottom: 30px; }
+    margin-bottom: 3rem; }
 
   .social .icons {
-    font-size: 30px;
+    font-size: 3rem;
     float: right;
     text-align: right; }
 
@@ -417,17 +418,17 @@ footer {
     visibility: hidden; }
 
   .social ul li:first-child {
-    margin-bottom: 18px; } }
+    margin-bottom: 1.8rem; } }
 @media only screen and (max-width: 620px) {
   .social .icons {
     float: right;
     text-align: right; }
 
   .previous-posts {
-    width: 220px; }
+    width: 36vw; }
 
   .recent-list {
-    width: 220px; }
+    width: 36vw; }
 
   .date {
     display: none; }
@@ -441,15 +442,15 @@ footer {
   .previous-posts {
     width: auto;
     max-width: 90vw;
-    width: 320px; }
+    min-width: 68vw; }
 
   .previous-posts ol li {
-    width: 330px; }
+    width: 68vw; }
 
   .recent-list {
     width: auto;
     max-width: 90vw;
-    width: 320px; } }
+    min-width: 68vw; } }
 .icons {
   font-family: "Icons";
   font-size: 1.4rem;
@@ -491,7 +492,7 @@ footer {
     .previous-posts li a {
       color: #f3f0f0; }
       .previous-posts li a:hover {
-        color: #d25437; }
+        color: #ec6f66; }
     .previous-posts li span.date {
       font-family: "Sans Serif", "Open Sans", "freight-sans-pro", "Freight Sans Pro";
       color: rgba(210, 210, 210, 0.7);
@@ -521,7 +522,8 @@ footer .recent-list {
     width: 100%; }
 
   .wrap.post {
-    padding: 0 7%; }
+    padding: 0 7%;
+    max-width: 80vw; }
 
   header.site-header {
     padding: 20px 7%; }
@@ -532,7 +534,7 @@ footer .recent-list {
 
   .deets {
     position: relative;
-    top: 20px; }
+    top: 2rem; }
 
   section.archive ol.post-list li {
     padding-bottom: 72px;
@@ -577,11 +579,11 @@ footer .recent-list {
     top: 20px; }
 
   .featured-image-small {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     float: left;
     margin-right: 1em;
-    border-radius: 40px;
+    border-radius: 50px;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -660,7 +662,7 @@ footer .recent-list {
           width: 100%;
           padding: 15px 0; }
           header.site-header nav ul a:active {
-            background-color: #d25437;
+            background-color: #ec6f66;
             color: #f3f0f0; } }
 @media only screen and (max-width: 500px) {
   .archive-wrap {
