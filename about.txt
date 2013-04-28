@@ -1,5 +1,5 @@
 Theme name:    Skriva
-Description:   A minimal, responsive theme for Anchor. Yarr.
+Description:   A minimal theme for Anchor forked from Zleek.
 Author name:   Cole Townsend
-Author site:   http://coletownsend.come
+Author site:   http://coletownsend.com
 License:       http://licence.visualidiot.com

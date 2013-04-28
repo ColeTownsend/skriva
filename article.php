@@ -1,6 +1,6 @@
 <div id="bump">
 <?php theme_include('header'); ?>
-    <section class="article">
+    <section class="article" id="article-<?php echo article_id(); ?>">
       <img src="<?php echo theme_url('/img/loading.gif'); ?>" class="loading" alt="Loading...">
       <div class="overlay"></div>
       <div class="featured-image" style="background-image: url(<?php echo article_custom_field('featured-image', 'http://coletownsend.com/blog/themes/skriva/img/feature.svg'); ?>);"></div>
@@ -13,7 +13,7 @@
           </hgroup>
         </header>
     
-        <?php echo article_html(); ?>
+        <?php echo article_markdown(); ?>
           
         <div class="btn-jacket"><a href="http://twitter.com/share?url=<?php echo full_url(); ?>&text=<?php echo article_title(); ?>&via=<?php echo twitter_account(); ?>" class="button">Share</a></div>
     

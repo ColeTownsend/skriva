@@ -85,10 +85,10 @@ h4 {
   line-height: 36px; }
 
 p {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   font-weight: 400;
-  line-height: 3.335rem;
-  margin-bottom: 3.335rem; }
+  line-height: 3.6rem;
+  margin-bottom: 3.6rem; }
 
 a, a:visited, a:active {
   color: #d25437;
@@ -115,10 +115,10 @@ strong {
   float: right; }
 
 article.post ul, article.post ol {
-  font-size: 2.3rem;
-  margin: 0 0 3.335rem 4rem; }
+  font-size: 2.4rem;
+  margin: 0 0 3.6rem 4rem; }
   article.post ul li, article.post ol li {
-    line-height: 1.6675rem; }
+    line-height: 1.8rem; }
 
 article.post ul {
   list-style: disc; }
@@ -129,18 +129,18 @@ article.post ol {
 blockquote {
   color: #504a46;
   font-style: italic;
-  font-size: 2.3rem;
-  line-height: 3.335rem;
-  padding: 0 2rem 0 3.335rem;
-  margin-bottom: 3.335rem;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  padding: 0 2rem 0 3.6rem;
+  margin-bottom: 3.6rem;
   border-left: 4px solid #d2d2d2; }
 
 /*- BUTTONS ----------------------------------*/
 .btn-jacket {
   display: block;
   margin: 0 auto;
-  padding-top: 3.335rem;
-  padding-bottom: 3.335rem;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
   width: 100%;
   height: auto;
   text-align: center; }
@@ -154,7 +154,7 @@ blockquote {
   border: 4px solid #d25437;
   border-radius: 4px;
   width: 100%;
-  font-size: 4.3rem;
+  font-size: 4.4rem;
   font-weight: bold;
   font-family: "brandon-grotesque", "grot";
   transition: border-color 0.25s ease-in-out;
@@ -265,15 +265,15 @@ section .archive {
     section .archive .post-list .bb {
       border-bottom: 4px solid #d25437; }
     section .archive .post-list li {
-      margin-bottom: 6.67rem;
-      padding: 6.67rem 0;
+      margin-bottom: 7.2rem;
+      padding: 7.2rem 0;
       width: 100%;
       font-size: 2.8rem; }
     section .archive .post-list time {
       position: relative;
       top: -6px;
       font-size: 1.6rem;
-      line-height: 3.335rem;
+      line-height: 3.6rem;
       vertical-align: middle; }
 
 .post img {
@@ -331,18 +331,18 @@ section.article article.post header.post-header {
       font-weight: 700;
       color: #d2d2d2;
       text-transform: uppercase;
-      margin-top: 2.22333rem; }
+      margin-top: 2.4rem; }
     section.article article.post header.post-header hgroup h1 {
-      margin-bottom: 1.6675rem;
+      margin-bottom: 1.8rem;
       letter-spacing: -1px; }
     section.article article.post header.post-header hgroup .lead {
       font-size: 2.8rem;
       font-style: italic;
-      line-height: 7.335rem;
+      line-height: 7.6rem;
       margin-bottom: 0; }
 
 section.article article.post figure {
-  margin: 3.335rem 0; }
+  margin: 3.6rem 0; }
   section.article article.post figure figcaption {
     font-size: 1.4rem;
     font-style: italic; }
@@ -359,10 +359,10 @@ section.article article.post p.meta {
 section.article article.post .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 3.335rem;
+  padding-top: 3.6rem;
   height: 0;
   overflow: hidden;
-  margin-bottom: 3.335rem; }
+  margin-bottom: 3.6rem; }
 
 section.article article.post .video-container iframe,
 section.article article.post .video-container object,
@@ -477,7 +477,7 @@ footer {
   height: 25rem;
   overflow: hidden; }
   .previous-posts p {
-    padding-top: 6.67rem; }
+    padding-top: 7.2rem; }
   .previous-posts li {
     margin-top: 10px;
     width: auto; }
@@ -505,15 +505,15 @@ footer {
     width: 220px; }
 
 footer .recent-list {
-  padding-top: 3.335rem;
+  padding-top: 3.6rem;
   font-family: "Brandon Grotesque", sans-serif;
-  line-height: 5.335rem;
+  line-height: 5.6rem;
   font-size: 2.6rem;
   font-weight: 500;
   color: #f3f0f0;
   text-transform: capitalize;
   border-bottom: 4px solid #a5da95;
-  margin-bottom: 1.6675rem; }
+  margin-bottom: 1.8rem; }
 
 /*- MEDIA QUERIES ----------------------------------- */
 @media only screen and (max-width: 960px) {
@@ -601,13 +601,13 @@ footer .recent-list {
     right: 6%; }
 
   section.article article.post header.post-header {
-    margin: 3.335rem 0; }
+    margin: 3.6rem 0; }
     section.article article.post header.post-header hgroup h1 {
-      font-size: 2.7rem !important; }
+      font-size: 2.8rem !important; }
     section.article article.post header.post-header p.date {
-      font-size: 1.1rem !important; }
+      font-size: 1.2rem !important; }
     section.article article.post header.post-header p, section.article article.post header.post-header ul, section.article article.post header.post-header ol {
-      font-size: 1.9rem !important;
+      font-size: 2rem !important;
       line-height: 3rem !important;
       margin-bottom: 3rem; }
     section.article article.post header.post-header ul, section.article article.post header.post-header ol {
@@ -615,7 +615,7 @@ footer .recent-list {
     section.article article.post header.post-header li {
       line-height: 3rem !important; }
     section.article article.post header.post-header p.lead, section.article article.post header.post-header blockquote {
-      font-size: 4.3rem !important; }
+      font-size: 4.4rem !important; }
     section.article article.post header.post-header blockquote {
       padding-left: 2rem;
       line-height: 2rem; }

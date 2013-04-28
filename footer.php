@@ -2,18 +2,15 @@
   <footer>
     <aside class="wrap post">
       <ol class="previous-posts">
-        <?php if(has_posts()): ?>
           <p class="recent-list">Previous Posts</p>
-          <!-- We have posts, it's safe to loop. -->
-          <?php while(posts(posts_per_page())): ?>
+        <?php while(rwar_latest_posts()): ?>
             <li>
               <span class="recent-title"><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></span>
               <span class="date"><time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time></span>
             </li>
-          <?php endwhile; ?>
-        <?php else: ?>
-          <p>Looks like someone's been slacking. Or maybe working too hard.</p>
-        <?php endif; ?>
+    <?php endwhile; ?>
+  
+
       </ol>
       <div class="social right">
         <ul>
@@ -44,5 +41,22 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <script type="text/javascript">
+  var GoSquared = {};
+  GoSquared.acct = "GSN-828852-T";
+  (function(w){
+    function gs(){
+      w._gstc_lt = +new Date;
+      var d = document, g = d.createElement("script");
+      g.type = "text/javascript";
+      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+      var s = d.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(g, s);
+    }
+    w.addEventListener ?
+      w.addEventListener("load", gs, false) :
+      w.attachEvent("onload", gs);
+  })(window);
+</script>
   </body>
 </html>

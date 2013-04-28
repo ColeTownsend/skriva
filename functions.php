@@ -58,6 +58,39 @@ function hide_show_menu_item($id, $key, $default = '')
   return $default;
 }
 
+function rwar_latest_posts($limit = 3) {
+    if( ! $posts = Registry::get('rwar_latest_posts')) {
+        $posts = Post::where('status', '=', 'published')->sort('created', 'desc')->take($limit)->get();
+
+        Registry::set('rwar_latest_posts', $posts = new Items($posts));
+    }
+
+    if($result = $posts->valid()) {
+        // register single post
+        Registry::set('article', $posts->current());
+
+        // move to next
+        $posts->next();
+    }
+    // back to the start
+    else $posts->rewind();
+
+    return $result;
+}
+
+function mytheme_latest_post() {
+	$post = Post::where('status', '=', 'published')->sort('created', 'desc')->take(1)->fetch();
+		
+	if($post) {
+		// set globally to use article theming functions
+		Registry::set('article', $post);
+
+		// or you can just return and use the raw object
+		return $post;
+	}
+}
+
+
 /*
   Twitter
 */

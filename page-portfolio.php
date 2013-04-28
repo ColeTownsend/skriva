@@ -5,8 +5,8 @@
                 <?php if(has_posts()): ?>
                   <!-- We have posts, it's safe to loop. -->
                   <h1></h1>
-                  <ol class="post-list" id="post-list">
-                     <lh style="text-align: center;"><h1><span class="bb">Recent Entries</span></h1></lh>
+                  <ol class="post-list">
+                     <lh style="text-align: center;"><h1><span class="bb">Past Work</span></h1></lh>
                     <?php while(posts()): ?>
                       <li>
                         <div class="featured-image-small" style="background-image: url(<?php echo article_custom_field('featured-image-small', 'http://coletownsend.com/blog/themes/skriva/img/feature-small.svg'); ?>);"></div>
@@ -17,11 +17,10 @@
                     <?php endwhile; ?>
                   </ol>
                 <?php else: ?>
-                  <p class="unprepped">Looks like there is nothing here. Huh!</p>
+                  <p>I'm just going to come clean and admit that I'm unprepared.</p>
                 <?php endif; ?>
               </article>
             </section>
         </div>
-
 
 <?php theme_include('footer'); ?>
