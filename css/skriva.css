@@ -579,11 +579,11 @@ footer .recent-list {
     top: 20px; }
 
   .featured-image-small {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     float: left;
     margin-right: 1em;
-    border-radius: 50px;
+    border-radius: 40px;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
