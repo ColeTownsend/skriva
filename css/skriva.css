@@ -144,7 +144,7 @@ blockquote {
   height: auto;
   text-align: center; }
 
-.button {
+.button, #sl2 .button-port {
   line-height: 4rem;
   height: 4rem;
   width: auto;
@@ -159,7 +159,7 @@ blockquote {
   transition: border-color 0.25s ease-in-out;
   -moz-transition: border-color 0.25s ease-in-out;
   -webkit-transition: border-color 0.25s ease-in-out; }
-  .button:hover {
+  .button:hover, #sl2 .button-port:hover {
     color: #504a46;
     border-color: #504a46;
     transition: border-color 0.25s ease-in-out;
@@ -243,6 +243,55 @@ header.site-header nav {
       header.site-header nav ul li a:hover {
         color: #867c76; }
 
+/* Lando */
+.portf:before, .portf:after {
+  content: "";
+  display: table; }
+.portf:after {
+  clear: both; }
+.portf {
+  zoom: 1; }
+
+#sl2 {
+  background: #EC6F66;
+  height: auto;
+  max-height: 480px;
+  background: #D25437;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; }
+  #sl2 .button-port {
+    color: #f3f0f0;
+    background-color: #f3f0f0; }
+
+.cta {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  float: left;
+  left: 16%;
+  padding-top: 20vh;
+  font-family: "Brandon Grotesque";
+  color: #f3f0f0; }
+  .cta h1 {
+    letter-spacing: 1px;
+    font-size: 56px; }
+
+.code {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  left: 49%;
+  margin-left: -22%;
+  z-index: 5; }
+  .code img {
+    width: 100%;
+    height: auto;
+    min-width: 200px; }
+
 /*- ARTICLE ----------------------------------- */
 section .article {
   position: relative;
@@ -319,13 +368,16 @@ section.article div.featured-image {
   top: 0;
   z-index: -1; }
 
+section.article div.payment
 section.article article.post header.post-header {
   margin: 7.2rem 0 3.6rem 0; }
+  section.article div.payment
   section.article article.post header.post-header hgroup {
     color: #504a46;
     position: relative;
     text-align: center;
     width: 100%; }
+    section.article div.payment
     section.article article.post header.post-header hgroup .date {
       font-family: "brandon-grotesque", "grot";
       font-size: 1.4rem;
@@ -333,9 +385,11 @@ section.article article.post header.post-header {
       color: #d2d2d2;
       text-transform: uppercase;
       margin-top: 2.4rem; }
+    section.article div.payment
     section.article article.post header.post-header hgroup h1 {
       margin-bottom: 1.8rem;
       letter-spacing: -1px; }
+    section.article div.payment
     section.article article.post header.post-header hgroup .lead {
       font-size: 2.8rem;
       font-style: italic;
@@ -718,6 +772,9 @@ footer .recent-list {
     top: 0;
     z-index: -1; }
 
+  section.article div.payment {
+    height: 20vh; }
+
   footer p.recent-list {
     font-family: "brandon-grotesque", "grot";
     line-height: 3rem;
@@ -757,6 +814,15 @@ footer .recent-list {
   100% {
     opacity: 1;
     -webkit-transform: translateX(0); } }
+
+@keyframes slide {
+  0% {
+    bottom: -50px;
+    opacity: .3; }
+
+  100% {
+    bottom: 0px;
+    opacity: 1; } }
 
 .featured-image-small {
   -webkit-animation-name: scale-in;
