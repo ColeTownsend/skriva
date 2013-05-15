@@ -21,27 +21,26 @@
 	
 	<?php } ?>
 	
-	<section class="contact-form" id="contact-form">
-		<form style="display: block;" action="/page-chat.php" method="post">
-			<br />
-			<input type="hidden" name="send" value="1" />
-			<br />
-			<div class="form-block">
-			<input autofocus class="label-over" name="name" id="name" value="" type="text" placeholder="Name" data-required="true"/>
-			<label class="label-hide" for="name">Name</label>
-		</div>
-			<br />
-			<div class="form-block">
-			<input class="label-over" name="email" id="email" type="text" placeholder="Email" data-trigger="change" data-required="true" data-type="email"/>
-			<label class="label-hide" for="email">Email</label>
-		</div>
-		<br />
-			<textarea name="comment" rows="6" placeholder="Share your thoughts." id="message" name="message" data-trigger="keyup" data-rangelength="[20,200]"></textarea>
-			<br />
-			<input type="submit" />
-		</form>
-</section>	
-
+	<section class="contact-form">
+			<form style="display: block;" action="" method="post">
+					<br />
+					<input type="hidden" name="send" value="1" />
+					<br />
+					<div class="form-block">
+					<input autofocus class="label-over" name="name" id="name" value="" type="text" placeholder="Name" data-required="true"/>
+				</div>
+					<br />
+					<div class="form-block">
+					<input class="label-over" name="email" id="email" type="text" placeholder="Email" data-trigger="change" data-required="true" type="email"/>
+				</div>
+				<br />
+					<textarea name="comment" rows="6" placeholder="Share your thoughts." id="message" name="message" data-trigger="keyup" data-rangelength="[20,200]"></textarea>
+					<br />
+					<input type="submit" />
+				</form>
+    <div class="mailer"> <a href="mailto:">Mail</a>
+    </div>
+	</section>
 </div>
 
 <?php theme_include('footer'); ?>

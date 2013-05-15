@@ -27,3 +27,10 @@ $(function(){
     $('div.overlay').fadeTo("slow", 0.6);
   });
 });
+
+$(function(){
+    $('.post-list li').each(function(i){
+        var t = $(this);
+        setTimeout(function(){ t.addClass('slider'); }, (i+1) * 330);
+    });
+});

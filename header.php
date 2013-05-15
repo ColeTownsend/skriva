@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
     <link rel="stylesheet" href="http://coletownsend.com/web/content/blog-font/sans/sans.css" media="all" />
     <link rel="stylesheet" href="http://coletownsend.com/web/content/blog-font/grot/grots.css" media="all" />
-
-
+    <link rel="stylesheet" href="http://coletownsend.com/web/content/fonts/Entypo/Entypo-Mini/style.css" media="all">
+    
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
+    
     <link rel="shortcut icon" href="http://coletownsend.com/favicon.ico">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
