@@ -65,16 +65,16 @@ h1, h2, h3, h4, h5 {
   font-family: "brandon-grotesque", "grot";
   font-weight: 700;
   letter-spacing: -1px;
-  line-height: 3.6rem; }
+  line-height: 36px; }
 
 h1 {
-  font-size: 4.2rem; }
+  font-size: 42px; }
 
 h2 {
-  font-size: 3.6rem; }
+  font-size: 36px; }
 
 h3 {
-  font-size: 3rem; }
+  font-size: 30px; }
 
 h4 {
   font-style: italic;
@@ -82,10 +82,10 @@ h4 {
   font-weight: bold; }
 
 p {
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 3.6rem;
-  margin-bottom: 3.6rem; }
+  line-height: 36px;
+  margin-bottom: 36px; }
 
 a, a:visited, a:active {
   color: #ec6f66;
@@ -118,10 +118,10 @@ strong {
   margin: 0 auto; }
 
 article.post ul, article.post ol {
-  font-size: 2.4rem;
-  margin: 0 0 3.6rem 4rem; }
+  font-size: 24px;
+  margin: 0 0 36px 40px; }
   article.post ul li, article.post ol li {
-    line-height: 1.8rem; }
+    line-height: 18px; }
 
 article.post ul {
   list-style: disc; }
@@ -132,32 +132,32 @@ article.post ol {
 blockquote {
   color: #504a46;
   font-style: italic;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-  padding: 0 2rem 0 3.6rem;
-  margin-bottom: 3.6rem;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0 20px 0 36px;
+  margin-bottom: 36px;
   border-left: 4px solid #d2d2d2; }
 
 /*- BUTTONS ----------------------------------*/
 .btn-jacket {
   display: block;
   margin: 0 auto;
-  padding-top: 3.6rem;
-  padding-bottom: 3.6rem;
+  padding-top: 36px;
+  padding-bottom: 36px;
   width: 100%;
   height: auto;
   text-align: center; }
 
 .button, #payButton {
-  line-height: 4rem;
-  height: 4rem;
+  line-height: 40px;
+  height: 40px;
   width: auto;
   padding: 4px 12px;
   text-align: center;
   border: 4px solid #ec6f66;
   border-radius: 4px;
   width: 100%;
-  font-size: 2.2rem;
+  font-size: 23.8px;
   font-weight: bold;
   font-family: "brandon-grotesque", "grot";
   background: none;
@@ -168,10 +168,10 @@ blockquote {
     transition: border-color 0.5s ease-in-out; }
 
 #payButton {
-  line-height: 3.3rem;
-  font-size: 2.2rem;
+  line-height: 33px;
+  font-size: 22px;
   text-transform: uppercase;
-  margin: 7.2rem auto;
+  margin: 72px auto;
   display: block; }
 
 /*- LAYOUT ----------------------------------- */
@@ -179,7 +179,7 @@ blockquote {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -32rem; }
+  margin: 0 auto -320px; }
 
 .wrap {
   width: 960px;
@@ -209,7 +209,7 @@ blockquote {
 
 /*- HEADER ----------------------------------- */
 header.site-header {
-  padding: 2rem 0;
+  padding: 20px 0;
   border-bottom: 1px solid #d2d2d2; }
 
 header.site-header a.menu {
@@ -222,7 +222,7 @@ header.site-header hgroup {
   float: left; }
   header.site-header hgroup h1 {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 100%;
     letter-spacing: 2px;
     text-transform: uppercase; }
@@ -242,10 +242,10 @@ header.site-header nav {
   header.site-header nav {
     zoom: 1; }
   header.site-header nav ul li {
-    font-size: 1.6rem;
+    font-size: 16px;
     display: inline;
     font-weight: 300;
-    margin-left: 2rem; }
+    margin-left: 20px; }
     header.site-header nav ul li a {
       color: #504a46; }
       header.site-header nav ul li a:hover {
@@ -485,7 +485,7 @@ header.site-header nav {
 /*- ARTICLE ----------------------------------- */
 section .article {
   position: relative;
-  margin-bottom: 5rem; }
+  margin-bottom: 50px; }
 section img.loading {
   display: block;
   margin: 0 auto;
@@ -495,7 +495,7 @@ section img.loading {
   margin-left: -12px;
   z-index: 10; }
 section .archive {
-  margin: 5rem 0; }
+  margin: 50px 0; }
   section .archive .post-list {
     width: 100%;
     list-style: none;
@@ -503,15 +503,15 @@ section .archive {
     section .archive .post-list .bb {
       border-bottom: 4px solid #d25437; }
     section .archive .post-list li {
-      margin-bottom: 7.2rem;
-      padding: 7.2rem 0;
+      margin-bottom: 72px;
+      padding: 72px 0;
       width: 100%;
-      font-size: 2.8rem; }
+      font-size: 24px; }
     section .archive .post-list time {
       position: relative;
       top: -6px;
-      font-size: 1.6rem;
-      line-height: 3.6rem;
+      font-size: 16px;
+      line-height: 36px;
       vertical-align: middle; }
 
 .post img {
@@ -521,24 +521,28 @@ section .archive {
   display: block;
   margin: 0 auto; }
 .post h1, .post h2, .post h3, .post h4, .post h5 {
-  margin-bottom: 1.8rem; }
+  margin-bottom: 18px; }
 
 .deets {
   position: relative;
-  top: 4.5rem; }
+  top: 45px;
+  z-index: 5; }
   .deets .date {
-    font-size: 1.8rem;
+    font-size: 18px;
     font-style: normal;
     position: relative;
+    top: 10px;
     left: 6px;
     color: #b1b1b1; }
 
 .featured-image-small {
-  width: 16rem;
-  height: 16rem;
   float: left;
-  margin-right: 3rem;
-  border-radius: 8rem;
+  position: relative;
+  z-index: 10;
+  margin-right: 3em;
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
   background-position: center center;
   background-size: cover; }
 
@@ -554,7 +558,7 @@ section.article div.featured-image {
 
 section.article div.payment
 section.article article.post header.post-header {
-  margin: 7.2rem 0 3.6rem 0; }
+  margin: 72px 0 36px 0; }
   section.article div.payment
   section.article article.post header.post-header hgroup {
     color: #504a46;
@@ -564,26 +568,26 @@ section.article article.post header.post-header {
     section.article div.payment
     section.article article.post header.post-header hgroup .date {
       font-family: "brandon-grotesque", "grot";
-      font-size: 1.4rem;
+      font-size: 14px;
       font-weight: 700;
       color: #d2d2d2;
       text-transform: uppercase;
-      margin-top: 2.4rem; }
+      margin-top: 24px; }
     section.article div.payment
     section.article article.post header.post-header hgroup h1 {
-      margin-bottom: 1.8rem;
+      margin-bottom: 18px;
       letter-spacing: -1px; }
     section.article div.payment
     section.article article.post header.post-header hgroup .lead {
-      font-size: 2.8rem;
+      font-size: 28px;
       font-style: italic;
-      line-height: 7.6rem;
+      line-height: 40px;
       margin-bottom: 0; }
 
 section.article article.post figure {
-  margin: 3.6rem 0; }
+  margin: 36px 0; }
   section.article article.post figure figcaption {
-    font-size: 1.4rem;
+    font-size: 14px;
     font-style: italic; }
   section.article article.post figure img {
     max-width: 100%;
@@ -593,15 +597,15 @@ section.article article.post figure {
 section.article article.post p.meta {
   color: #d2d2d2;
   font-style: italic;
-  font-size: 1.6rem; }
+  font-size: 16px; }
 
 section.article article.post .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 3.6rem;
+  padding-top: 36px;
   height: 0;
   overflow: hidden;
-  margin-bottom: 3.6rem; }
+  margin-bottom: 36px; }
 
 section.article article.post .video-container iframe,
 section.article article.post .video-container object,
@@ -614,41 +618,41 @@ section.article article.post .video-container embed {
 
 /*- FOOTER ----------------------------------- */
 .push {
-  height: 32rem !important; }
+  height: 320px !important; }
 
 footer {
   background-color: #3C424E;
-  height: 32rem;
+  height: 320px;
   color: #FFFFFF;
-  font-size: 1.8rem;
-  line-height: 2rem;
-  margin-top: 5rem; }
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 50px; }
 
 /* Social */
 .social {
   float: right;
-  padding-top: 8.8rem;
-  font-size: 2rem;
+  padding-top: 88px;
+  font-size: 20px;
   width: auto; }
   .social ul {
     list-style: none;
     list-style-type: none li;
-      list-style-type-margin-bottom: 3.6rem; }
+      list-style-type-margin-bottom: 36px; }
     .social ul li:last-child {
       margin-bottom: 0; }
     .social ul .foot-link {
-      margin-left: 1rem; }
+      margin-left: 10px; }
 
 @media only screen and (max-width: 760px) {
   .social {
-    width: 8rem;
-    padding-top: 7.2rem; }
+    width: 80px;
+    padding-top: 72px; }
 
   .social ul li {
-    margin-bottom: 3rem; }
+    margin-bottom: 30px; }
 
   .social .icons {
-    font-size: 3rem;
+    font-size: 30px;
     float: right;
     text-align: right; }
 
@@ -656,7 +660,7 @@ footer {
     visibility: hidden; }
 
   .social ul li:first-child {
-    margin-bottom: 1.8rem; } }
+    margin-bottom: 18px; } }
 @media only screen and (max-width: 620px) {
   .social .icons {
     float: right;
@@ -691,8 +695,8 @@ footer {
     min-width: 68vw; } }
 .icons {
   font-family: "Icons";
-  font-size: 1.4rem;
-  line-height: 2rem; }
+  font-size: 14px;
+  line-height: 20px; }
 
 #mail {
   color: #f3f0f0; }
@@ -711,12 +715,12 @@ footer {
 
 /* Recent Posts */
 .previous-posts {
-  width: 34rem;
+  width: 340px;
   float: left;
-  height: 25rem;
+  height: 250px;
   overflow: hidden; }
   .previous-posts p {
-    padding-top: 7.2rem; }
+    padding-top: 72px; }
   .previous-posts li {
     margin-top: 10px;
     width: auto; }
@@ -744,15 +748,15 @@ footer {
     width: 220px; }
 
 footer .recent-list {
-  padding-top: 3.6rem;
+  padding-top: 36px;
   font-family: "Brandon Grotesque", sans-serif;
-  line-height: 5.6rem;
-  font-size: 2.6rem;
+  line-height: 38px;
+  font-size: 26px;
   font-weight: 500;
   color: #f3f0f0;
   text-transform: capitalize;
   border-bottom: 4px solid #a5da95;
-  margin-bottom: 1.8rem; }
+  margin-bottom: 18px; }
 
 /* Contact Form */
 form {
@@ -904,13 +908,13 @@ input[type="submit"]:active {
 
   .deets {
     position: relative;
-    top: 2rem; }
+    top: 20px; }
 
   section.archive ol.post-list li {
-    padding-bottom: 7.2rem;
+    padding-bottom: 72px;
     font-size: 24px;
     width: 100%;
-    padding-top: 7.2rem;
+    padding-top: 72px;
     margin-bottom: 16px; }
     section.archive ol.post-list li span, section.archive ol.post-list li span time {
       font-size: 15px;
@@ -967,27 +971,27 @@ input[type="submit"]:active {
     right: 6%; }
 
   section.article article.post header.post-header {
-    margin: 3.6rem 0; }
+    margin: 36px 0; }
     section.article article.post header.post-header hgroup h1 {
-      font-size: 2.8rem !important; }
+      font-size: 28px !important; }
     section.article article.post header.post-header p.date {
-      font-size: 1.2rem !important; }
+      font-size: 12px !important; }
     section.article article.post header.post-header p, section.article article.post header.post-header ul, section.article article.post header.post-header ol {
-      font-size: 2rem !important;
-      line-height: 3rem !important;
-      margin-bottom: 3rem; }
+      font-size: 20px !important;
+      line-height: 30px !important;
+      margin-bottom: 30px; }
     section.article article.post header.post-header ul, section.article article.post header.post-header ol {
-      margin-left: 3rem; }
+      margin-left: 30px; }
     section.article article.post header.post-header li {
-      line-height: 3rem !important; }
+      line-height: 30px !important; }
     section.article article.post header.post-header p.lead, section.article article.post header.post-header blockquote {
-      font-size: 4.4rem !important; }
+      font-size: 26px !important; }
     section.article article.post header.post-header blockquote {
-      padding-left: 2rem;
-      line-height: 2rem; }
+      padding-left: 30px;
+      line-height: 30px; }
 
   header.site-header {
-    min-height: 5.9rem; }
+    min-height: 59px; }
     header.site-header hgroup {
       float: none;
       position: absolute;
@@ -1084,8 +1088,8 @@ input[type="submit"]:active {
 
   footer p.recent-list {
     font-family: "brandon-grotesque", "grot";
-    line-height: 3rem;
-    font-size: 2rem;
+    line-height: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: #f3f0f0;
     text-transform: capitalize;

@@ -1,10 +1,10 @@
 $sans: "Sans Serif", "Open Sans";
 $sans-alt: "freight-sans-pro", "Freight Sans Pro";
 $grot: "brandon-grotesque", "grot" ;
-$font-size: 2.4rem;
+$font-size: 24px;
 $lh: 1.5*$font-size;
 $featureH: 40vh;
-$wrapW: 96rem;
+$wrapW: 960px;
 $red: #EC6F66;
 $green: #A5DA95;
 $black: #504a46;
@@ -14,7 +14,7 @@ $navy: #3C424E;
 $pink: #EC6F66;
 
 $borderR: 4px;
-$footerH: 32rem;
+$footerH: 320px;
 
 $articleW: 660px;
 
@@ -155,7 +155,7 @@ strong {
 
 article.post ul, article.post ol {
   font-size: $font-size;
-  margin: 0 0 $lh 4rem;
+  margin: 0 0 $lh 40px;
   li {
       line-height: $lh/2;
   }
@@ -172,7 +172,7 @@ blockquote {
   font-style: italic;
   font-size: $font-size;
   line-height: $lh;
-  padding: 0 2rem 0 $lh;
+  padding: 0 20px 0 $lh;
   margin-bottom: $lh;
   border-left: 4px solid $lighter;
 }
@@ -189,8 +189,8 @@ blockquote {
 }
 
 .button {
-    line-height: 4rem;
-    height: 4rem;
+    line-height: 40px;
+    height: 40px;
     width: auto;
     padding: 4px 12px;
     text-align: center;
@@ -211,8 +211,8 @@ blockquote {
 
 #payButton {
     @extend .button;
-    line-height: 3.3rem;
-    font-size: ($font-size - .2rem);
+    line-height: 33px;
+    font-size: ($font-size - 2px);
     text-transform: uppercase;
     margin: 2*$lh auto;
     display: block;
@@ -226,7 +226,7 @@ blockquote {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -32rem; }
+  margin: 0 auto -320px; }
 
 .wrap {
   width: 960px;
@@ -247,7 +247,7 @@ blockquote {
 
 /*- HEADER ----------------------------------- */
 header.site-header {
-  padding: 2rem 0;
+  padding: 20px 0;
   border-bottom: 1px solid $lighter;
 }
 header.site-header a.menu {
@@ -260,7 +260,7 @@ header.site-header hgroup {
   float: left;
   h1 {
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 20px;
       line-height: 100%;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -279,10 +279,10 @@ header.site-header nav {
   display: block;
   @include clearfix;
   ul li {
-    font-size: 1.6rem;
+    font-size: 16px;
     display: inline;
     font-weight: 300;
-    margin-left: 2rem; 
+    margin-left: 20px; 
     a {
         color: $black;
         &:hover {
@@ -559,7 +559,7 @@ header.site-header nav {
 section {
   .article {
   position: relative;
-  margin-bottom: 5rem; 
+  margin-bottom: 50px; 
   }
   img.loading {
   display: block;
@@ -571,7 +571,7 @@ section {
   z-index: 10;
   }
   .archive {
-    margin: 5rem 0;
+    margin: 50px 0;
     .post-list {
         width: 100%;
         list-style: none;
@@ -583,12 +583,12 @@ section {
             margin-bottom: $lh*2;
             padding: ($lh * 2) 0;
             width: 100%;
-            font-size: 2.8rem;
+            font-size: 24px;
           }
             time {
                 position: relative;
                 top: -6px;
-                font-size: 1.6rem;
+                font-size: 16px;
                 line-height: $lh;
                 vertical-align: middle;
             }
@@ -609,22 +609,26 @@ section {
     }    
     .deets {
         position: relative;
-        top: 4.5rem;
+        top: 45px;
+        z-index: 5;
         .date {
-            font-size: 1.8rem;
+            font-size: 18px;
             font-style: normal;
             position: relative;
+            top: 10px;
             left: 6px;
             color: #b1b1b1;
     }
 }
 
 .featured-image-small {
-    width: 16rem;
-    height: 16rem;
     float: left;
-    margin-right: 3rem;
-    border-radius: 8rem;
+    position: relative;
+    z-index: 10;
+    margin-right: 3em;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
     background-position: center center;
     background-size: cover;
 }
@@ -643,7 +647,7 @@ section.article div.featured-image {
 section.article div.payment
 
 section.article article.post header.post-header {
-  margin: 7.2rem 0 3.6rem 0;
+  margin: (2*$lh) 0 $lh 0;
   hgroup {
       color: $black;
       position: relative;
@@ -651,7 +655,7 @@ section.article article.post header.post-header {
       width: 100%;
       .date {
         font-family: $grot;
-        font-size: 1.4rem;
+        font-size: 14px;
         font-weight: 700;
         color: $lighter;
         text-transform: uppercase;
@@ -662,7 +666,7 @@ section.article article.post header.post-header {
             letter-spacing: -1px; 
         }
         .lead {
-            font-size: 2.8rem;
+            font-size: 28px;
             font-style: italic;
             line-height: $lh + 4;
             margin-bottom: 0;
@@ -673,7 +677,7 @@ section.article article.post header.post-header {
 section.article article.post figure {
   margin: $lh 0;
     figcaption {
-        font-size: 1.4rem;
+        font-size: 14px;
         font-style: italic;  
     }
     img {
@@ -686,7 +690,7 @@ section.article article.post figure {
 section.article article.post p.meta {
   color: $lighter;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 section.article article.post .video-container {
   position: relative;
@@ -709,16 +713,16 @@ section.article article.post .video-container embed {
 
 /*- FOOTER ----------------------------------- */
 .push {
-  height: 32rem !important; 
+  height: 320px !important; 
   }
   
 footer {
   background-color: #3C424E;
   height: $footerH;
   color: #FFFFFF;
-  font-size: 1.8rem;
-  line-height: 2rem;
-  margin-top: 5rem;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 50px;
 }
 
 
@@ -726,34 +730,34 @@ footer {
 
 .social {
   float: right;
-  padding-top: 8.8rem;
-  font-size: 2rem;
+  padding-top: 88px;
+  font-size: 20px;
   width: auto;
     ul {
         list-style: none;
         list-style-type: none 
         li {
-            margin-bottom: 3.6rem;   
+            margin-bottom: 36px;   
         }
         li:last-child {
                 margin-bottom: 0;
             }
     .foot-link {
-        margin-left: 1rem; }
+        margin-left: 10px; }
 }
 }
 
 @media only screen and (max-width : $break-mid) {
     .social {
-        width: 8rem;
-        padding-top: 7.2rem;
+        width: 80px;
+        padding-top: $lh*2;
     }
     .social ul li {
-        margin-bottom: 3rem;
+        margin-bottom: 30px;
     }
     
     .social .icons {
-        font-size: 3rem;
+        font-size: 30px;
         float: right;
         text-align: right;
     }
@@ -815,8 +819,8 @@ footer {
 
 .icons {
   font-family: "Icons";
-  font-size: 1.4rem;
-  line-height: 2rem; 
+  font-size: 14px;
+  line-height: 20px; 
 }
 
 #mail {
@@ -846,9 +850,9 @@ footer {
 /* Recent Posts */
 
 .previous-posts {
-    width: 34rem;
+    width: 340px;
     float: left;
-    height: 25rem;
+    height: 250px;
     overflow: hidden;
     p {
         padding-top: $lh*2;
@@ -884,7 +888,7 @@ footer .recent-list {
   padding-top: $lh;
   font-family: 'Brandon Grotesque', sans-serif;
   line-height: $lh+2;
-  font-size: 2.6rem;
+  font-size: 26px;
   font-weight: 500;
   color: $bg;
   text-transform: capitalize;
@@ -1076,7 +1080,7 @@ input[type="submit"]:active {
    
 .deets {
     position: relative;
-    top: 2rem;
+    top: 20px;
 }
 
 section.archive ol.post-list {
@@ -1165,34 +1169,34 @@ section.archive ol.post-list {
       header.post-header {
           margin: $lh 0;
           hgroup h1 {
-            font-size: $font-size + .4rem !important;
+            font-size: $font-size + 4px !important;
           }
           p.date {
-            font-size: $font-size - 1.2rem !important;
+            font-size: $font-size - 12px !important;
           }
           p, ul, ol {
-            font-size: $font-size - .4rem !important;
-            line-height: 3rem !important;
-            margin-bottom: 3rem;  
+            font-size: $font-size - 4px !important;
+            line-height: 30px !important;
+            margin-bottom: 30px;  
           }
           ul, ol {
-              margin-left: 3rem;
+              margin-left: 30px;
           }
           li {
-              line-height: 3rem !important;
+              line-height: 30px !important;
           }
           p.lead, blockquote {
-            font-size: $font-size + 2 !important;
+            font-size: $font-size + 2px !important;
           }
           blockquote {
-             padding-left: 2rem;
-             line-height: 2rem; 
+             padding-left: 30px;
+             line-height: 30px; 
           }
         }
   }
 
   header.site-header {
-    min-height: 5.9rem;
+    min-height: 59px;
     hgroup {
         float: none;
         position: absolute;
@@ -1307,8 +1311,8 @@ section.article div.payment {
 
 footer p.recent-list {
   font-family: $grot;
-  line-height: 3rem;
-  font-size: 2rem;
+  line-height: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: $bg;
   text-transform: capitalize;
