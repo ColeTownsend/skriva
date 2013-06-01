@@ -165,7 +165,7 @@ blockquote {
   .button:hover, #payButton:hover {
     color: #504a46;
     border-color: #504a46;
-    transition: border-color 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out; }
 
 #payButton {
   line-height: 33px;

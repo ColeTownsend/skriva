@@ -5,7 +5,7 @@ $(document).ready(function () {
 	    $.each(playerShots.shots, function (i, shot) {
 	        html.push('<a href="' + shot.url + '" target="_blank">');
 	        html.push('<img src="' + shot.image_url + '" ');
-	        html.push('alt="' + shot.title + '"></a>');
+	        html.push('alt="' + shot.title + '" + freezeframe ></a>');
 	    });
 	
 	    $('#work').html(html.join(''));

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php theme_include('header'); ?>
 <script> 
     $(document).ready(function() {
@@ -124,11 +125,59 @@
      
      <section class="portf" id="sl5">
         <article class="wrap-alt">
-             <h1>Let's Work Together</h1>
-                <section class="contact-form" id="contact-form">
-                    <?php theme_include('mail-form'); ?>
-        		</section>	
+                 <h1>Let's Work Together</h1>                    
+            <section class="contact-form" id="contact-form">
 
+                    <?php
+            			//init variables
+            			$cf = array();
+            			$sr = false;
+            			
+            			if(isset($_SESSION['cf_returndata'])){
+            				$cf = $_SESSION['cf_returndata'];
+            			 	$sr = true;
+            			}
+                    ?>
+                    
+            <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+                <li id="info">There were some problems with your form submission:</li>
+                <?php 
+				if(isset($cf['errors']) && count($cf['errors']) > 0) :
+					foreach($cf['errors'] as $error) :
+				?>
+                <li><?php echo $error ?></li>
+                <?php
+					endforeach;
+				endif;
+				?>
+            </ul>
+            
+            <p id="success" class="center <?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! I will get back to you as soon as possible</p>
+            
+            <form method="post" action="process.php">
+                
+                <br />
+                <div class="form-block">
+                <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="Name" required autofocus />
+                </div>
+                
+                <br />
+                <div class="form-block">
+                <input type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="Email" required />
+                </div>
+                
+                <br />
+                <textarea id="message" name="message" placeholder="What is on your mind?" required rows="6"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
+                
+                <input type="submit" id="submit-button" />
+                <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+            </form>
+            
+            <a class="mailer" href="mailto:cole@coletownsend.com?--subject=Inquiry">EMAIL</a>
+            
+            <?php unset($_SESSION['cf_returndata']); ?>
+                    
+            </section>
         </article>
      </section> 
     
