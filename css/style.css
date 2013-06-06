@@ -165,7 +165,7 @@ blockquote {
   .button:hover, #payButton:hover {
     color: #504a46;
     border-color: #504a46;
-    transition: all 0.5s ease-in-out; }
+    transition: border-color 0.5s ease-in-out; }
 
 #payButton {
   line-height: 33px;
@@ -1076,6 +1076,7 @@ input[type="submit"]:active {
   section.article div.featured-image {
     vertical-align: middle;
     height: 50vh;
+    max-height: 200px;
     width: 100%;
     background-position: center center;
     background-size: cover;
@@ -1084,7 +1085,8 @@ input[type="submit"]:active {
     z-index: -1; }
 
   section.article div.payment {
-    height: 20vh; }
+    height: 20vh;
+    max-height: 200px; }
 
   footer p.recent-list {
     font-family: "brandon-grotesque", "grot";

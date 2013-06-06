@@ -1297,6 +1297,7 @@ section.article img.loading {
 section.article div.featured-image {
   vertical-align: middle;
   height: 50vh;
+  max-height: 200px;
   width: 100%;
   background-position: center center;
   background-size: cover;
@@ -1307,6 +1308,7 @@ section.article div.featured-image {
 
 section.article div.payment {
     height: 20vh;
+    max-height: 200px;
 }
 
 footer p.recent-list {
