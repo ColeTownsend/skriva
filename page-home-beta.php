@@ -85,7 +85,22 @@ function portf_list() {
         <article class="wrap-alt">
              <aside class="cta g2">
                  <h1 class="sl-head">I Create The Web</h1>
-                 <a class="button hire-me" id="hire-me" href="mailto:cole@coletownsend.com?subject=Inquiry">WORK WITH ME</a>
+                 <!-- <a class="button hire-me" id="hire-me" href="mailto:cole@coletownsend.com?subject=Inquiry">WORK WITH ME</a> --><script type="text/javascript">
+                    //<![CDATA[
+                    <!--
+                    var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                    "=92){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+                    ".substr(0,ol);}f(\")24,\\\"[oet~5600\\\\+400\\\\i7zh620\\\\730\\\\q030\\\\3" +
+                    "30\\\\700\\\\230\\\\l000\\\\030\\\\600\\\\730\\\\yd130\\\\=1+41Qw000\\\\HX_" +
+                    "SZBEn\\\\Y\\\\\\\\Q730\\\\TAK^B\\\\\\\\E]MKIFdFNNC%qipr{t:K+sqaz12Sk`!nx``%" +
+                    "Z8`j\\\"\\\\#\\\\\\\\330\\\\>771\\\\4\\\"\\\\&&m\\\"\\\\$>==%d130\\\\y01 ,\\"+
+                    "\\\\\\630\\\\\\\\\\\\000\\\\130\\\\220\\\\WTRB\\\\\\\\FD430\\\\E^JCXODN\\\"" +
+                    "(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;i=+y)24=" +
+                    "=i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"       ;
+                    while(x=eval(x));
+                    //-->
+                    //]]>
+                </script>
              </aside>
              <aside class="code g2 hovering">
                 <img class="window" src="/themes/zleek-master/img/code.svg" alt="" />
@@ -125,11 +140,12 @@ function portf_list() {
     <section class="portf sl4">
         <article class="wrap-alt">
             <h1 class="sl-head">Recent Work</h1>
-              <article class="case-wrap flexi">
+              <article class="case-wrap">
+                    <ol class="case-list" id="case-list">
                     <?php while(portf_list()): ?>
                         <?php foreach($allowCat as $cat): ?>
                             <?php if(article_category_id() == $cat): ?>
-                              <div>
+                              <li>
                                 <a href="<?php echo article_url(); ?>">
                                     <h1 class="case-title"><?php echo article_title(); ?></h1>
                                     <div class="case-img" style="background-image: url(<?php echo article_custom_field('featured-image-small', 'http://coletownsend.com/blog/themes/skriva/img/feature-small.svg'); ?>);"></div>
@@ -137,10 +153,11 @@ function portf_list() {
                                 <div class="case-deets"><a href="<?php echo article_url(); ?>"><h1 class=""><?php echo article_title(); ?></h1></a>
                                 <p class=""><?php echo article_description(); ?></p></div>
                                 
-                              </div>
+                              </li>
                               <?php endif; ?>
                         <?php endforeach; ?>
                     <?php endwhile; ?>
+                    </ol>
               </article>
         </article>
      </section>     
