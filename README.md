@@ -5,6 +5,6 @@ Skriva is the name of my blog. It's a fork of the awesome Zleek Theme. I had alr
 
 Shout out to [James Dinsdale](http://www.molovo.co.uk/) for helping me out a bit!
 
-To see what it looks like, check it out at my [blog](http://blog.coletownsend.com).
+To see what it looks like, check it out at my [blog](http://coletownsend.com/posts).
 
-This is my first time using git, so caveat emptor.
+This is my first time using git, caveat emptor.
