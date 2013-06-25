@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>payment</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="payment">
+            <path d="M0,0 L0,500 L800,500 L800,0 L0,0 Z M0,0" id="Rectangle 1" fill="#96D7CB"></path>
+            <g id="card" transform="translate(290.000000, 187.000000)">
+                <path d="M13.9950758,0 C11.7886564,0 10,1.78501371 10,4.00659725 L10,123.993403 C10,126.206185 11.7901029,128 13.9950758,128 L206.004924,128 C208.211344,128 210,126.214986 210,123.993403 L210,4.00659725 C210,1.79381469 208.209897,0 206.004924,0 L13.9950758,0 Z M13.9950758,0" id="Rectangle 33" fill="#FFCFCF"></path>
+                <path d="M10,21 L10,41 L210,41 L210,21 L10,21 Z M10,21" id="Rectangle 35" fill="#504A46"></path>
+            </g>
+            <g id="Group" transform="translate(315.000000, 242.000000)">
+                <path d="M2.00291437,0 C0.896735307,0 0,0.897026226 0,2.00494659 L0,21.9950534 C0,23.1023548 0.899564475,24 2.00291437,24 L130,24 L130,0 L2.00291437,0 Z M2.00291437,0" id="Rectangle 5" fill="#FEFBE3"></path>
+                <path d="M130,0 L130,24 L158.008383,24 C159.108323,24 160,23.1029738 160,21.9950534 L160,2.00494659 C160,0.897645164 159.10216,0 158.008383,0 L130,0 Z M130,0" id="Rectangle 6" fill="#EBB7B7"></path>
+            </g>
+        </g>
+    </g>
+</svg>
