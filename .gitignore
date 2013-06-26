@@ -1,5 +1,3 @@
-
-
 # Logs and databases #
 ######################
 *.log
@@ -14,6 +12,7 @@
 .htaccess
 =======
 .DS_Store?
+.DS_Store
 ._*
 .Spotlight-V100
 .Trashes
@@ -25,6 +24,3 @@ htaccess
 .htaccess
 anchor/
 system/
->>>>>>> fca7633fbb98618c84b9fad2f29d6fb79192b065
-
-.DS_Store
