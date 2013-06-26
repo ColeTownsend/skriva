@@ -8,47 +8,47 @@
       return $categories[$category]->id;
     }
   }
-
-function portf_list() {
-  // only run on the first call
-  if( ! Registry::has('rwar_post_archive')) {
-    // capture original article if one is set
-    if($article = Registry::get('article')) {
-      Registry::set('original_article', $article);
+    
+    function portf_list() {
+      // only run on the first call
+      if( ! Registry::has('rwar_post_archive')) {
+        // capture original article if one is set
+        if($article = Registry::get('article')) {
+          Registry::set('original_article', $article);
+        }
+      }
+    
+      if( ! $posts = Registry::get('rwar_post_archive')) {
+        $posts = Post::where('status', '=', 'published')->sort('created', 'desc')->get();
+    
+        Registry::set('rwar_post_archive', $posts = new Items($posts));
+      }
+    
+      if($result = $posts->valid()) {
+        // register single post
+        Registry::set('article', $posts->current());
+    
+        // move to next
+        $posts->next();
+      }
+      else {
+        // back to the start
+        $posts->rewind();
+    
+        // reset original article
+        Registry::set('article', Registry::get('original_article'));
+    
+        // remove items
+        Registry::set('rwar_post_archive', false);
+      }
+    
+      return $result;
     }
-  }
-
-  if( ! $posts = Registry::get('rwar_post_archive')) {
-    $posts = Post::where('status', '=', 'published')->sort('created', 'desc')->get();
-
-    Registry::set('rwar_post_archive', $posts = new Items($posts));
-  }
-
-  if($result = $posts->valid()) {
-    // register single post
-    Registry::set('article', $posts->current());
-
-    // move to next
-    $posts->next();
-  }
-  else {
-    // back to the start
-    $posts->rewind();
-
-    // reset original article
-    Registry::set('article', Registry::get('original_article'));
-
-    // remove items
-    Registry::set('rwar_post_archive', false);
-  }
-
-  return $result;
-}
 
 ?>
-<div id="bump">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <?php theme_include('header'); ?>
-    
+
  <script>
 	$(document).scroll(function() {
     var scroll_pos = $(this).scrollTop();
@@ -61,12 +61,6 @@ function portf_list() {
 }
 });
 </script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		freezeframe = new FreezeFrame();
-	});
-	</script>
 
     <section class="portf sl1">
         <article class="wrap">
@@ -85,22 +79,7 @@ function portf_list() {
         <article class="wrap-alt">
              <aside class="cta g2">
                  <h1 class="sl-head">I Create The Web</h1>
-                 <!-- <a class="button hire-me" id="hire-me" href="mailto:cole@coletownsend.com?subject=Inquiry">WORK WITH ME</a> --><script type="text/javascript">
-                    //<![CDATA[
-                    <!--
-                    var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-                    "=92){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
-                    ".substr(0,ol);}f(\")24,\\\"[oet~5600\\\\+400\\\\i7zh620\\\\730\\\\q030\\\\3" +
-                    "30\\\\700\\\\230\\\\l000\\\\030\\\\600\\\\730\\\\yd130\\\\=1+41Qw000\\\\HX_" +
-                    "SZBEn\\\\Y\\\\\\\\Q730\\\\TAK^B\\\\\\\\E]MKIFdFNNC%qipr{t:K+sqaz12Sk`!nx``%" +
-                    "Z8`j\\\"\\\\#\\\\\\\\330\\\\>771\\\\4\\\"\\\\&&m\\\"\\\\$>==%d130\\\\y01 ,\\"+
-                    "\\\\\\630\\\\\\\\\\\\000\\\\130\\\\220\\\\WTRB\\\\\\\\FD430\\\\E^JCXODN\\\"" +
-                    "(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;i=+y)24=" +
-                    "=i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"       ;
-                    while(x=eval(x));
-                    //-->
-                    //]]>
-                </script>
+                 <a class="button hire-me" id="hire-me" href="mailto:cole@coletownsend.com?subject=Inquiry">WORK WITH ME</a>
              </aside>
              <aside class="code g2 hovering">
                 <img class="window" src="/themes/zleek-master/img/code.svg" alt="" />
@@ -149,10 +128,9 @@ function portf_list() {
                                 <a href="<?php echo article_url(); ?>">
                                     <h1 class="case-title"><?php echo article_title(); ?></h1>
                                     <div class="case-img" style="background-image: url(<?php echo article_custom_field('featured-image-small', 'http://coletownsend.com/blog/themes/skriva/img/feature-small.svg'); ?>);"></div>
-                                                                    </a>
-                                <div class="case-deets"><a href="<?php echo article_url(); ?>"><h1 class=""><?php echo article_title(); ?></h1></a>
+                                <div class="case-deets"><h1 class=""><?php echo article_title(); ?></h1>
                                 <p class=""><?php echo article_description(); ?></p></div>
-                                
+                                </a>
                               </li>
                               <?php endif; ?>
                         <?php endforeach; ?>

@@ -1,4 +1,3 @@
- <div id="bump">
 <?php theme_include('header'); ?>
 <!-- If page is set to home, show latest post -->
     

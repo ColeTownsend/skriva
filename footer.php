@@ -22,8 +22,6 @@
     </aside>
   </footer>
 
-  <!-- Grab some fresh-squeezed jquery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <!-- If they're out, get some from the cellar -->
   <script>window.jQuery || document.write('<script src="<?php echo theme_url('/js/jquery.js'); ?>"><\/script>')</script>
   <script src="http://coletownsend.com/web/content/script/waypoints.js"></script>

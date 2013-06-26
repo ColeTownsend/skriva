@@ -26,3 +26,5 @@ htaccess
 anchor/
 system/
 >>>>>>> fca7633fbb98618c84b9fad2f29d6fb79192b065
+
+.DS_Store

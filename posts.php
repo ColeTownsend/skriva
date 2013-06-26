@@ -1,11 +1,11 @@
 <?php theme_include('header'); ?>
-    <div id="bump">
+    <div id='bump'>
         <section class="article archive">
           <article class="archive-wrap">
             <?php if(has_posts()): ?>
               <!-- We have posts, it's safe to loop. -->
               <h1></h1>
-              <ol class="post-list" id="post-list">
+              <ol data-liffect="slideLeft" class="post-list" id="post-list">
                  <lh style="text-align: center;"><h1><span class="bb">Recent Entries</span></h1></lh>
                 <?php while(posts()): ?>
                   <li>
@@ -22,5 +22,4 @@
           </article>
         </section>
     </div>
-
 <?php theme_include('footer'); ?>

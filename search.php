@@ -1,5 +1,4 @@
-<div id="bump>"
-    <?php theme_include('header'); ?>
+<?php theme_include('header'); ?>
     
     <h1 class="wrap">You searched for &ldquo;<?php echo search_term(); ?>&rdquo;.</h1>
     

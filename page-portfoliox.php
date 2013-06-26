@@ -1,4 +1,3 @@
-<div id="bump">
     <?php theme_include('header'); ?>
             <section class="article archive">
               <article class="archive-wrap">

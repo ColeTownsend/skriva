@@ -46,7 +46,7 @@ function portf_list() {
 }
 
 ?>
-<div id="bump">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <?php theme_include('header'); ?>
     
  <script>

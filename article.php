@@ -1,4 +1,3 @@
-<div id="bump">
 <?php theme_include('header'); ?>
     <section class="article" id="article-<?php echo article_id(); ?>">
       <img src="<?php echo theme_url('/img/loading.gif'); ?>" class="loading" alt="Loading...">

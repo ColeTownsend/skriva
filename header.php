@@ -33,7 +33,6 @@
     <meta property="og:description" content="<?php echo site_description(); ?>">
 
 
-
     <?php if(customised()): ?>
       <!-- Custom CSS -->
       <style><?php echo article_css(); ?></style>
@@ -41,7 +40,9 @@
       <script><?php echo article_js(); ?></script>
     <?php endif; ?>
   </head>
-  
+
+<div id="bump">
+
   <body class="<?php echo body_class(); ?>">
     <header class="site-header">
       <div class="wrap">

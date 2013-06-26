@@ -3,12 +3,11 @@
  <section class="article">
   <img src="<?php echo theme_url('/img/loading.gif'); ?>" class="loading" alt="Loading...">
   <div class="overlay"></div>
-  <div class="featured-image" style="background-image: url('http://coletownsend.com/themes/zleek-master/img/feature-img.svg'); ?>);"></div>
+  <div class="featured-image" style="background-image: url('http://coletownsend.com/themes/zleek-master/img/404.svg'); ?>);"></div>
   <article class="wrap post">
     <header class="post-header">
       <hgroup>
-        <h1 class="">Four oh Four!</h1>
-        <p class="">Unfortunately, the page 
+        <p class="lead">Unfortunately, the page 
         "<code>/<?php echo current_url(); ?></code>" came up missing.</p>
       </hgroup>
     </header>
