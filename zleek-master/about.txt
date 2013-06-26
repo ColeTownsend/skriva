@@ -1,5 +1,0 @@
-Theme name:    Skriva
-Description:   A minimal theme for Anchor forked from Zleek.
-Author name:   Cole Townsend
-Author site:   http://coletownsend.com
-License:       http://licence.visualidiot.com
